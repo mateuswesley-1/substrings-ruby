@@ -6,10 +6,10 @@ require 'pry-byebug'
 # the substring as keys, and the number os occurrences of the substring in the string as
 # values
 def substring(string, dictionary)
-  sub_counts = Hash.new(0)
-
+  sub_counts = Hash.new()
+  string.downcase!
   dictionary.each do |substring|
-      sub_counts[substring] += string.scan(/(?=#{substring})/).length
+      sub_counts[substring] = string.scan(/(?=#{substring})/).length
   end
   sub_counts
 end
