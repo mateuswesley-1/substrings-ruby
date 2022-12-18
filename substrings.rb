@@ -14,5 +14,5 @@ def substring(string, dictionary)
   sub_counts
 end
 
-p substring('anamataana xanabelaxana fuceta etanoletaenergetico', ['xana', 'ana', 'fo', 'eta'])
+p substring('Anamataana xAnabelaXana fuceta etanoletaenergetico', ['xana', 'ana', 'fo', 'eta'])
 
